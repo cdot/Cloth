@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-    <script data-main="js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "jquery": "./node_modules/jquery/dist/jquery.js",
+          "three": "./node_modules/three/src/Three.js"
+        }
+      }
+    </script>
+    <script type="module" src="js/Cloth.js"></script>
   </head>
   <body id="canvas">
   </body>
